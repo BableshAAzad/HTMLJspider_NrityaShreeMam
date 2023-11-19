@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <style>
+        form{
+            background-color: rgb(189, 190, 247);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset style="width: 600px;">
+            <legend>Application Form</legend>
+            <label for="first_name"> First Name</label>
+            <input type="text" id="first_name" name="FirstName">
+            <br><br>
+            <label for="lasst_name"> First Name</label>
+            <input type="text" id="lasst_name" name="LaststName">
+            <br><br>
+            <label for="">Gender</label>
+            <input type="radio" name="gender" value="male" id="gen_male"><label for="gen_male">Male</label>
+            <input type="radio" name="gender" value="female" id="gen_female"><label for="gen_female">Female</label>
+            <input type="radio" name="gender" value="other" id="gen_others"><label for="gen_others">Others</label>
+            <br><br>
+            <label for="dob">DOB</label>
+            <input type="date" name="DOB" id="dob">
+            <br><br>
+            <label for="contact_tel">Contact First</label>
+            <input type="tel" name="telephone" id="contact_tel">
+            <br><br>
+            <label for="moblie_number">Contact Second</label>
+            <input type="number" name="mobile" id="moblie_number">
+            <br><br>
+            <label for="email_id">Mail ID</label>
+            <input type="email" name="email" id="email_id">
+            <br><br>
+            <label for="address_ad">Address</label>
+            <textarea name="address" id="address_ad" cols="30" rows="4" placeholder="Enter Your Complete Address"
+                style="resize: none;"></textarea>
+            <br><br>
+            <label for="pass">Password</label>
+            <input type="password" name="password" id="pass">
+            <br><br>
+            <label for="">Skills</label>
+            <input type="checkbox" name="skills" id="" value="java"><label for="">Java</label>
+            <input type="checkbox" name="skills" id="" value="sql"><label for="">Sql</label>
+            <input type="checkbox" name="skills" id="" value="web"><label for="">Web</label>
+            <br><br>
+            <label for="file_upload">Resume</label>
+            <input type="file" name="resumeFile" id="file_upload">
+            <br><br>
+            <input type="submit" value="Go">
+            <input type="reset" value="Cancel">
+        </fieldset>
+    </form>
+</body>
+
+</html>
