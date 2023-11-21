@@ -19,10 +19,10 @@
 
 <body>
     <!-- ^ autocomplate = on/off : form / input-->
-    <form action=""> <!--autocomplete="on"-->
-        <label for="first_name">First Name</label>
-        <!-- <span class="fname"><sub>*</sub></span> -->
-        <input type="text" name="FirstName">
+    <!-- <form action=""> autocomplete="on" -->
+    <!-- <label for="first_name">First Name</label> -->
+    <!-- <span class="fname"><sub>*</sub></span> -->
+    <!-- <input type="text" name="FirstName">
         <br><br>
         <label for="last_name">Last Name</label>
         <input type="text" name="LastName" autocomplete="on">
@@ -33,8 +33,8 @@
         <br><br>
         <input type="submit">
         <input type="reset">
-    </form>
-    <!-- ^ outfocus : input tag-->
+    </form>  -->
+    <!-- ^ autofocus : input tag-->
     <!-- <form action="">
         <label for="first_name">First Name</label>
         <input type="text" name="FirstName" autofocus>
@@ -82,6 +82,65 @@
         <input type="submit">
         <input type="reset">
     </form> -->
+    <!-- ^ Placeholder :  -->
+    <!-- <form action="">
+        <label for="first_name">First Name</label>
+        <input type="text" name="FirstName" placeholder="Enter First Name ">
+        <br><br>
+        <label for="last_name">Last Name</label>
+        <input type="text" name="LastName" placeholder="Enter last name">
+        <br><br>
+        <label for="">Gender</label>
+        <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+        <br><br>
+        <label for="country">Country</label>
+        <input type="text" value="country" readonly>
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form> -->
+    <!-- ^ maxlength, minlength , pattern -->
+    <!-- <form action="">
+        <label for="first_name">First Name</label>
+        <input type="text" name="FirstName" id="first_name" maxlength="5" placeholder="Max length 5">
+        <br><br>
+        <label for="last_name">Last Name</label>
+        <input type="text" name="LastName" id="last_name" placeholder="Min length 5" minlength="5">
+        <br><br>
+        <label for="code">Pincode</label>
+        <input type="text" name="pincode" id="code" pattern="[0-9]{10}">
+        <br><br>
+        <label for="code2">Pincode2</label>
+        <input type="text" name="pincode2" id="code2" pattern="[0-9 a-z A-Z]{6}">
+        <br><br>
+        <label for="aadhar">Aadhar</label>
+        <input type="text" name="aadhar" id="aadhar" placeholder="1234 5678 4321" pattern="[0-9]{4} [0-9]{4} [0-9]{4}">
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form> -->
+    <!-- ^ max, min, step -->
+    <form action="">
+        <label for="code">Pincode</label>
+        <input type="number" name="pincode" id="code" max="6" placeholder="maxt val is 6">
+        <!-- Minimum value is everything -->
+        <br><br>
+        <label for="code2">Pincode2</label>
+        <input type="number" name="pincode2" id="code2" min="7" placeholder="min val is 7">
+        <!-- Max value is everything -->
+        <br><br>
+        <label for="Data1">Date 1</label>
+        <input type="date" name="Date1" id="Data1" max="2023-11-21" min="2023-10-21">
+        <br><br>
+        <label for="age">Age </label>
+        <input type="number" name="Age" id="age" min="0" max="25" step="2">
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <!-- ^ disable, checked  -->
+   <!-- ^  -->
 </body>
 
 </html>
